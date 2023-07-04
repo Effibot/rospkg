@@ -22,9 +22,3 @@ clean: clean_dist
 
 install: distro
 	sudo checkinstall python setup.py install
-
-testsetup:
-	echo "running rospkg tests"
-
-test: testsetup
-	cd test && pytest && pytest-3
